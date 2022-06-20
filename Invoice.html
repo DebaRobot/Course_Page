@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Project 4</title>
+    <style>
+        body{
+            background-color: #f2f6ff;
+            margin: 0;
+            padding: 16px;
+        }
+        .social-icon{
+            width: 50px;
+            height: 50px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        form{
+            background-color: white;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        #form-heading{
+            font-size: 32px;
+            padding-top: 56px;
+            padding-bottom: 32px;
+        }
+
+        #social-wrapper{
+            background-color: #f2f6ff;
+            padding: 24px;
+        }
+        .input-box{
+            font-size: 18px;
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+            border: 0;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+        }
+
+        #input-wrapper{
+            padding-top: 80px;
+            padding-bottom: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+
+        #btn-submit{
+            background-color: #0056ff;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size: 18px;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 id = "form-heading">Register</h1>
+        <div id = "social-wrapper">
+            <img class="social-icon" src = "https://cdnlogo.com/logos/g/35/google-icon.svg" 
+            alt = "GoogleIcon">
+            <img class="social-icon" src = "https://cdn0.iconfinder.com/data/icons/free-social-media-set/24/linkedin-512.png" 
+            alt = "GoogleIcon">
+            <img class="social-icon" src = "https://pyxis.nymag.com/v1/imgs/11d/582/c7b0487c6e26db4f5be6eb679e3620d2ce-facebook.rsquare.w1200.jpg" 
+            alt = "GoogleIcon">
+            <img class="social-icon" src = "data:image/png;base64,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" 
+            alt = "GoogleIcon">
+
+        </div>
+        <div id = "input-wrapper">
+            <div>
+                <br>
+                <input class = "input-box" type="text" name = "Username" 
+                placeholder="Username">
+            </div>
+            <div>
+                <input class = "input-box" type="email" name = "email" 
+                placeholder="Email">
+            </div>
+            <div>
+                <input class = "input-box" type="password" name = "Password"
+                placeholder="Password">
+            </div>
+            <div>
+                <input class = "input-box" type="password" name = "Confirm-Password" 
+                placeholder="Confirm-Password">
+            </div>
+            <input id = "btn-submit" type = "submit" value = "Register">
+        </div>
+    </form>
+</body>
+</html>
